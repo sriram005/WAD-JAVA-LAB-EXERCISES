@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Review Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form style="width: 50%;">
+        <fieldset>
+            <legend>Your Details</legend>
+            Name: <input type="text" name="name"><br>
+            Email: <input type="email" name="email">
+        </fieldset>
+    </form>
+
+    <form style="width: 50%;">
+        <fieldset>
+            <legend>Your Review</legend>
+            How did you hear about us? <select name="how">
+                <option value="Google">Google</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Instagram">Instagram</option>
+            </select><br><br>
+            Would you Visit again?<br>
+            <input type="radio" name="visit">Yes
+            <input type="radio" name="visit">No
+            <input type="radio" name="visit">May be
+            <br><br>
+            Comments<br>
+            <textarea name="comments" rows="5" cols="55"></textarea>
+            <br><br>
+            <input type="checkbox" name="signup"> Sign up for email updates<br>
+            <input type="submit" name="submit" value="Submit Review">
+        </fieldset>
+    </form>
+</body>
+
+</html>
