@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFAD2;
+    font-family: 'Times New Roman', Arial;
+    font-size: 18px;
+    font-style: italic;
+    padding: 10px 20px 12px 22px;
+}
+
+form{
+    width:500px;
+    margin: 7px;
+}
+   
+fieldset{
+    line-height: 30px;
+}
+legend{
+    background-color: white;
+}
+
+.input{
+    width:300px
+}
