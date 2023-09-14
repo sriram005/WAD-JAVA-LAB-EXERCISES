@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validataion</title>
+</head>
+<body>
+    <form action="post" onsubmit="return Validate()">
+        <h1>A Sample HTML Data Entry Form</h1>
+        Enter your Name:
+        <input type="text" name="fname" id="fname"> <br>
+        Enter your Password: 
+        <input type="password" name="pass" id="pass"> <br>
+        Which year? 
+        <input type="radio" name="year">Yr1
+        <input type="radio" name="year">Yr2
+        <input type="radio" name="year">Yr3 <br>
+        Subject Registered:
+        <input type="checkbox" name="sub">E101
+        <input type="checkbox" name="sub">E102
+        <input type="checkbox" name="sub">E103 <br>
+        Select Day:
+        <select name="day">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </select> <br>
+        <textarea name="msg"cols="30" rows="5" placeholder="Enter your special request here" id="msg"></textarea> <br>
+        <input type="submit" value="SEND">
+        <input type="reset" value="CLEAR">
+    </form>
+</body>
+<script>
+    var patt = /[\d!@#$*()_+]/
+    function Validate() {
+        let fname = document.getElementById("fname").value
+        let pass = document.getElementById("pass").value
+        let year = document.getElementsByName("year")
+        let sub = document.getElementsByName("sub")
+        let msg = document.getElementById("msg")
+        if(patt.test(fname)){
+            alert("Name must not contains Special characters")
+            return false
+        }
+        if(!year[1].checked){
+            alert("Year must be 2nd Year")
+            return false
+        }
+        alert(pass.length)
+        if(pass.length<5 || pass.length>8){
+            alert("Password must be of length minimum of 5 characters and maximum of 8 characters.")
+            return false
+        }
+        if(!isAllfilled()){
+            alert("Enter all Details")
+            return false
+        }
+    }
+    function isAllfilled() {
+        let c = 0
+        if(fname.value=="" || pass.value=="" || msg.value=="")
+            return false
+        if(!year[1].checked)
+            return false
+        for(let i=0;i<3;i++){
+            if(sub[i].checked)
+                c++
+        }
+        if(c==0)
+            return false
+        return true
+    }
+</script>
+</html>
