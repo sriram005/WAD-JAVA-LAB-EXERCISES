@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE store SYSTEM "store.dtd">
+<store>
+    <shop>
+        <Shop_name>ABC Store</Shop_name>
+        <Shop_location>Chennai</Shop_location>
+        <Total_items>500</Total_items>
+        <Home_delivery>Yes</Home_delivery>
+        <Total_revenue>50000</Total_revenue>
+    </shop>
+    <shop>
+        <Shop_name>DEF Store</Shop_name>
+        <Shop_location>Coimbatore</Shop_location>
+        <Total_items>750</Total_items>
+        <Home_delivery>No</Home_delivery>
+        <Total_revenue>100000</Total_revenue>
+    </shop>
+</store>

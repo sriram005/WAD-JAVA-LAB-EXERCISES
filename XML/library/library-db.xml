@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="library.xsd">
+    <Lib_name>Central Library</Lib_name>
+    <Lib_total_no_of_books>5000</Lib_total_no_of_books>
+    <Lib_total_no_of_reference_books>200</Lib_total_no_of_reference_books>
+    <Lib_no_of_journals>150</Lib_no_of_journals>
+    <Lib_no_of_periodicals>100</Lib_no_of_periodicals>
+</Library>

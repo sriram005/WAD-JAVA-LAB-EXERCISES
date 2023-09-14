@@ -1,0 +1,7 @@
+<!ELEMENT store (shop+)>
+<!ELEMENT shop (Shop_name,Shop_location,Total_items,Home_delivery,Total_revenue)>
+<!ELEMENT Shop_name (#PCDATA)>
+<!ELEMENT Shop_location (#PCDATA)>
+<!ELEMENT Total_items (#PCDATA)>
+<!ELEMENT Home_delivery (#PCDATA)>
+<!ELEMENT Total_revenue (#PCDATA)>

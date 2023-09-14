@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Library">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Lib_name" type="xs:string" />
+                <xs:element name="Lib_total_no_of_books" type="xs:integer" />
+                <xs:element name="Lib_total_no_of_reference_books" type="xs:integer" />
+                <xs:element name="Lib_no_of_journals" type="xs:integer" />
+                <xs:element name="Lib_no_of_periodicals" type="xs:integer" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

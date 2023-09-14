@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mobileSales xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="sales.xsd">
+    <branch>
+        <branchName>Branch 1</branchName>
+        <availableModels>50</availableModels>
+        <weeklySales>
+            <model>
+                <modelId>1</modelId>
+                <Brand>Samsung</Brand>
+                <Price>5000</Price>
+                <Color>Black</Color>
+                <SimSize>Nano</SimSize>
+                <Memory>128GB</Memory>
+                <Camera>Yes</Camera>
+                <TouchScreen>Yes</TouchScreen>
+                <NoSold>10</NoSold>
+                <Store_Name>store 1</Store_Name>
+            </model>
+            <model>
+                <modelId>2</modelId>
+                <Brand>Apple</Brand>
+                <Price>10000</Price>
+                <Color>Red</Color>
+                <SimSize>E-SIM</SimSize>
+                <Memory>128GB</Memory>
+                <Camera>Yes</Camera>
+                <TouchScreen>Yes</TouchScreen>
+                <NoSold>15</NoSold>
+                <Store_Name>store 1</Store_Name>
+            </model>
+        </weeklySales>
+    </branch>
+
+    <branch>
+        <branchName>Branch 2</branchName>
+        <availableModels>50</availableModels>
+        <weeklySales>
+            <model>
+                <modelId>4</modelId>
+                <Brand>Realme</Brand>
+                <Price>4000</Price>
+                <Color>Blue</Color>
+                <SimSize>Nano</SimSize>
+                <Memory>128GB</Memory>
+                <Camera>Yes</Camera>
+                <TouchScreen>Yes</TouchScreen>
+                <NoSold>20</NoSold>
+                <Store_Name>store 2</Store_Name>
+            </model>
+            <model>
+                <modelId>2</modelId>
+                <Brand>Apple</Brand>
+                <Price>8000</Price>
+                <Color>Black</Color>
+                <SimSize>E-SIM</SimSize>
+                <Memory>128GB</Memory>
+                <Camera>Yes</Camera>
+                <TouchScreen>Yes</TouchScreen>
+                <NoSold>10</NoSold>
+                <Store_Name>store 2</Store_Name>
+            </model>
+        </weeklySales>
+    </branch>
+    <branch>
+        <branchName>Branch 1</branchName>
+        <availableModels>50</availableModels>
+        <weeklySales>
+            <model>
+                <modelId>1</modelId>
+                <Brand>Samsung</Brand>
+                <Price>6000</Price>
+                <Color>Black</Color>
+                <SimSize>Nano</SimSize>
+                <Memory>128GB</Memory>
+                <Camera>Yes</Camera>
+                <TouchScreen>Yes</TouchScreen>
+                <NoSold>8</NoSold>
+                <Store_Name>store 3</Store_Name>
+            </model>
+            <model>
+                <modelId>8</modelId>
+                <Brand>Vivo</Brand>
+                <Price>10000</Price>
+                <Color>Red</Color>
+                <SimSize>Nano</SimSize>
+                <Memory>128GB</Memory>
+                <Camera>Yes</Camera>
+                <TouchScreen>Yes</TouchScreen>
+                <NoSold>11</NoSold>
+                <Store_Name>store 3</Store_Name>
+            </model>
+        </weeklySales>
+    </branch>
+</mobileSales>

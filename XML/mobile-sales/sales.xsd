@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="mobileSales">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="branch" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="branchName" type="xs:string" />
+                            <xs:element name="availableModels" type="xs:integer" />
+                            <xs:element name="weeklySales">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="model" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="modelId" type="xs:integer" />
+                                                    <xs:element name="Brand" type="xs:string" />
+                                                    <xs:element name="Price" type="xs:decimal" />
+                                                    <xs:element name="Color" type="xs:string" />
+                                                    <xs:element name="SimSize" type="xs:string" />
+                                                    <xs:element name="Memory" type="xs:string" />
+                                                    <xs:element name="Camera" type="xs:string" />
+                                                    <xs:element name="TouchScreen" type="xs:string" />
+                                                    <xs:element name="NoSold" type="xs:integer" />
+                                                    <xs:element name="Store_Name" type="xs:string" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
