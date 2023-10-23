@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Response page</title>
+    <style>
+        .Container {
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            height: 470px;
+            padding: 10px;
+            border: 2px solid;
+        }
+
+        .pink-msg {
+            font-size: 28px;
+            font-weight: bold;
+            color: rgb(243, 37, 209);
+        }
+
+        .cmp-name {
+            margin-top: 30px;
+            display: grid;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .cmp-services {
+            margin-bottom: 30px;
+        }
+
+        .cmp-people {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="ResponsePage" method="post">
+        <div class="Container">
+            <span class="pink-msg">This form invokes a servlet as its action.</span>
+            <div class="cmp-name">
+                <label for="cname"><b>Please enter your company's name:</b></label><br>
+                <input type="text" class="cname" name="cname">
+            </div>
+            <div class="cmp-services">
+                <label for="cneed"><b>What web services does your company need?</b></label><br><br>
+                <input type="checkbox" class="cneed" name="cneed" value="Web Server Hosting"> Web Server Hosting<br>
+                <input type="checkbox" class="cneed" name="cneed" value="Web Page Design"> Web Page Design<br>
+                <input type="checkbox" class="cneed" name="cneed" value="Java Servlets and JSP Devlepment"> Java
+                Servlets and JSP Devlepment
+            </div>
+            <div class="cmp-people">
+                <label for="cpeople"><b>How many people are in your Company?</b></label><br><br>
+                <input type="radio" class="cpeople" name="cpeople" value="1 to 9"> 1 to 9<br>
+                <input type="radio" class="cpeople" name="cpeople" value="10 - 99"> 10 - 99<br>
+                <input type="radio" class="cpeople" name="cpeople" value="100 - 999"> 100 - 999<br>
+                <input type="radio" class="cpeople" name="cpeople" value="1000+"> 1000+
+            </div>
+            <div>
+                <button type="submit" value="Submit Form">Submit Form</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
