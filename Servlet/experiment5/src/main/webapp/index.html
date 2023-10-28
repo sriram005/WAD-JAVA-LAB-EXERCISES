@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <title>Employees Table</title>
+    <style>
+        th {
+            background-color: black;
+            color: white;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        p,
+        .Update-msg,
+        .update {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 25px;
+        }
+
+        .btn-primary {
+            color: white;
+            background-color: rgb(13, 121, 236);
+            padding: 10px;
+            border-width: 0px;
+            border-radius: 6px;
+        }
+
+        .btn-success {
+            background-color: rgb(6, 196, 6);
+            color: white;
+            padding: 10px;
+            border-width: 0px;
+            border-radius: 6px;
+        }
+
+        .update td {
+            padding: 8px;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="table">
+        <table border="1">
+            <tr>
+                <th>Employee ID</th>
+                <th>Employee Name</th>
+                <th>Employee Email</th>
+                <th>Employee Contact</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <p>No Record found</p>
+                </td>
+            </tr>
+        </table>
+        <div class="btn">
+            <button class="btn-primary" onclick="enterdetails()">
+                Add New Record
+            </button>
+        </div>
+    </div>
+
+    <!--submit-->
+    <div class="update" id="submit">
+        <div class="Update-msg">
+            <h2 id="detail">Enter Details</h2>
+        </div>
+        <form action="EmployeeServlet" method="post">
+            <table>
+                <div class="Update-feilds">
+                    <tr>
+                        <td>Employee Id:</td>
+                        <td><input type="text" name="eId" /></td>
+                    </tr>
+                    <tr>
+                        <td>Employee Name:</td>
+                        <td><input type="text" name="eName" /></td>
+                    </tr>
+                    <tr>
+                        <td>Employee Email:</td>
+                        <td><input type="mail" name="eMail" /></td>
+                    </tr>
+                    <tr>
+                        <td>Employee Contact:</td>
+                        <td><input type="text" name="eContact" /></td>
+                    </tr>
+                </div>
+            </table>
+            <div class="btn">
+                <input type="submit" class="btn-primary" onclick="displaytable()" value="Submit" />
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    var table = document.getElementById("table");
+    var submit = document.getElementById("submit");
+    submit.style.display = "none";
+    function enterdetails() {
+        table.style.display = "none";
+        submit.style.display = "flex";
+    }
+    function displaytable() {
+        submit.style.display = "none";
+        table.style.display = "flex";
+    }
+</script>
+</html>
