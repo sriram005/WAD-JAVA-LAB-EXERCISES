@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tax Calculator</title>
+</head>
+
+<body>
+    <form action="TaxCalculator.jsp" method="post">
+        Customer Name:
+        <input type="text" name="name"><br>
+
+        Gross Pay:
+        <input type="text" name="income"><br>
+
+        Marital Status:
+        <input type="radio" name="maritalStatus" value="single">Single
+        <input type="radio" name="maritalStatus" value="married">Married<br>
+        Age:
+        <select name="age">
+            <option value="below60">below 60</option>
+            <option value="above60">60 and Above</option>
+        </select><br>
+
+        <input type="submit" value="Calculate Tax">
+    </form>
+</body>
+
+</html>
